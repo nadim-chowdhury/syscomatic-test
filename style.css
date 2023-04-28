@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  color: #ddd;
+  background: #1a2b3c;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #123;
+  padding: 10px 0;
+}
+
+.logo h1 {
+  padding: 5px 10px;
+}
+
+.bars,
+.close {
+  display: none;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.body {
+  text-align: center;
+}
+
+.body a {
+  text-decoration: none;
+  color: #00aaff;
+}
+
+.body h3 {
+  margin: 4rem 0;
+  background: #123;
+  padding: 10px 0;
+}
+
+#home h2 {
+  margin: 40px;
+}
+
+#portfolio a {
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+#portfolio a:hover {
+  color: #00ffaa;
+}
+
+#contact p {
+  margin: 10px;
+}
+
+#contact a i {
+  font-size: 2rem;
+  margin-top: 20px;
+  transition: 0.5s;
+  margin-bottom: 2rem;
+}
+
+#contact a i:hover {
+  color: #00ffaa;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+  .bars,
+  .close {
+    margin-right: 10px;
+    font-size: 1.75rem;
+    z-index: 5;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .links {
+    position: fixed;
+    right: 0;
+    visibility: hidden;
+    top: 0;
+    padding-top: 80px;
+    background-color: #123;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  .links li {
+    padding: 10px 30px;
+    transition: 0.5s;
+  }
+
+  .links li:hover {
+    color: #00ffaa;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bars {
+    display: none;
+    visibility: hidden;
+  }
+}
